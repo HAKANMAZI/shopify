@@ -13,7 +13,7 @@ class Cshopify():
         self.product_list =  []
         self.count = 0
 
-    def extract(self, url):
+    def extractWebPages(self, url):
         r = requests.get(url)
         data = r.json()
 
@@ -121,8 +121,8 @@ class Cshopify():
 if __name__=="__main__":
     cls = Cshopify()
 
-    cls.extract("https://completedworks.com/products.json?limit=10000#page=1")
-    cls.extract("https://tortware.com/products.json?limit=10000#page=1")
+    cls.extractWebPages("https://completedworks.com/products.json?limit=10000#page=1")
+    cls.extractWebPages("https://tortware.com/products.json?limit=10000#page=1")
     #cls.test("https://www.ukecigstore.com/products.json?limit=10000#page=1")
     #cls.test("https://helmboots.com/products.json?limit=10000#page=1")
     cls.save_csv()
