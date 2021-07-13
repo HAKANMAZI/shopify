@@ -8,8 +8,6 @@ h = html2text.HTML2Text()
 h.ignore_links = True
 
 
-
-
 class Cshopify():
     def __init__(self) -> None:
         self.product_list =  []
