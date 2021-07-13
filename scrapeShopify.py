@@ -123,8 +123,6 @@ if __name__=="__main__":
 
     cls.extractWebPages("https://completedworks.com/products.json?limit=10000#page=1")
     cls.extractWebPages("https://tortware.com/products.json?limit=10000#page=1")
-    #cls.test("https://www.ukecigstore.com/products.json?limit=10000#page=1")
-    #cls.test("https://helmboots.com/products.json?limit=10000#page=1")
     cls.save_csv()
 
     #cls.dongu()
